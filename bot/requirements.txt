@@ -1,0 +1,5 @@
+aiohttp
+botbuilder-core
+botbuilder-integration-aiohttp
+groq
+python-dotenv
