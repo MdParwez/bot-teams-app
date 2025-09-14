@@ -17,17 +17,15 @@ The bot integrates with **ServiceNow** for approval workflows and **Rundeck** fo
 ---
 
 ## 🏗️ Architecture
-
-```mermaid
+---
 flowchart LR
-    User[Teams User] -->|Request: "Install Visual Studio"| Bot[Teams Bot App]
+    User[Teams User] -->|Request: Install Visual Studio| Bot[Teams Bot App]
     Bot --> SN[ServiceNow]
     SN -->|Approval| Bot
     Bot --> RD[Rundeck]
     RD -->|Executes Installation| Target[Target System]
     Target --> Bot
     Bot --> User[Teams User (confirmation)]
-```
 
 ---
 
